@@ -23,6 +23,7 @@ class Spaceship(arcade.Sprite):
         elif self.change_x== -1:
             if self.center_x > self.width // 2:
                 self.center_x -= self.speed
+
     
     def fire (self):
         new_bullet= Bullet(self)
