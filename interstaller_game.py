@@ -9,13 +9,13 @@ from heart import Heart
 class Game (arcade.Window):
     def __init__(self):
         super().__init__(width= 600, height= 600, title= "Interstaller Game")
-        self.background= arcade.load_texture("session_13\interstaller_game\interstaller_game_pictures\game.png")
+        self.background= arcade.load_texture(".\\game.png")
         self.spaceship =Spaceship(self)
         self.enemy_list= []
         self.heart_list= []
         self.collosion= 0
         self.score= 0
-        self.game_over= arcade.load_sound("session_13\interstaller_game\game_over.mp3")
+        self.game_over= arcade.load_sound(".\\game_over.mp3")
         self.laser = arcade.load_sound(":resources:sounds/laser2.wav",False)
         self.explosion = arcade.load_sound(":resources:sounds/explosion1.wav",False)
         self.second=time.time()
