@@ -4,7 +4,7 @@ import arcade
 
 class Enemy(arcade.Sprite):
     def __init__(self, game):
-        super().__init__("session_13\interstaller_game\interstaller_game_pictures\enemy.png")
+        super().__init__(".\\enemy.png")
         self.center_x= random.randint(0, game.width) 
         self.center_y= game.height + 50
         self.width=  90
