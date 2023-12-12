@@ -4,7 +4,7 @@ from bullet import Bullet
 
 class Spaceship(arcade.Sprite):
     def __init__(self, game):
-        super().__init__("session_13\interstaller_game\interstaller_game_pictures\spaceship.png")
+        super().__init__(".\\spaceship.png")
         self.center_x= game.width // 2
         self.center_y= 45
         self.change_x= 0
